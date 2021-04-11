@@ -1,0 +1,22 @@
+<view class='content'>TEST</view> 
+<view>{{message}}</view>
+<button bindtap="onclick">
+  更新
+</button>
+<button bindtap="todemo" style="margin-top:26rpx" data-course="{{course}}" wx:for="{{course}}" wx:for-item="course">
+  {{course.name}}
+</button>
+
+<switch checked="{{check}}" bindchange="changeswitch">
+
+</switch>
+{{check}}
+
+<view wx:for="{{course}}" wx:key="id">
+  {{index}}:{{item.name}}
+</view>
+
+<view wx:if="{{check}}">
+{{message}}
+</view>
+
