@@ -3,10 +3,14 @@
 const app = getApp()
 
 Page({
+
   data: {
     message:'Here is a test.',
     checkin:true,
-    course:[{id:0,name:'A'},{id:1,name:'B'},{id:2,name:'C'}]
+    course:[{id:0,name:'A'},{id:1,name:'B'},{id:2,name:'C'}],
+    staffA: {firstName: 'Hulk', lastName: 'Hu'},
+    staffB: {firstName: 'Shang', lastName: 'You'},
+    staffC: {firstName: 'Gideon', lastName: 'Lin'}
   },
   
   onLoad() {
